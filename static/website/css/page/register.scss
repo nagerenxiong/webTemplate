@@ -1,0 +1,298 @@
+@import "../common/reset";
+/* @import "modules/webSiteHeader"; */
+
+.menu_top_box{
+	     height: 80px;
+	     margin-left: 340px;
+	     background-color: #fff;
+	   &>img{
+	   display: inline-block;
+	   float: left;
+	   margin-top: 20px;
+	   }
+	   &>ul{
+	   float: left;
+	    margin-left: 60px;
+	   	display: inline-block;
+	   	&>li{
+	   		float: left;
+      
+	   		&>a{
+	   			font-size: 18px;
+               color: #333333;
+               line-height: 80px;
+               padding: 0 20px;
+               height: 80px;
+               display: inline-block;
+               cursor: pointer;
+               &:hover{
+               	color: #007eb2;
+               
+               }
+	   		}
+
+	   	}
+	   	.menu_box_more{
+	   		position: relative;
+	   		&>ul{ 
+	   			width: 750px;
+	   			height:auto;
+	   			line-height: 54px;
+	   			position: absolute;
+	   			left: -100px;
+	   			background-color: #fff;
+	   			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	   			border-radius: 3px;
+	   			display: none;
+	   			&>li{
+	   				float: left;
+	   				&>a{
+	   					font-size: 14px;
+	   					color: #333333;
+	   					padding: 0px 20px;
+	   					cursor: pointer;
+	   					&:hover{
+	   						color: #007eb2;
+	   					}
+	   				}
+	   			}
+	   			&::before{
+
+                content: "";
+			    position: absolute;
+			    top: -16px;
+			    left: 140px;
+			    border-width: 8px;
+			    border-style: solid;
+			    border-color: transparent transparent #ccc transparent;
+
+	   		}
+	   		  &::after{
+                content: "";
+			    position: absolute;
+			    top: -15px;
+			    left: 140px;
+			    border-width: 8px;
+			    border-style: solid;
+			    border-color: transparent transparent #fff transparent;
+			
+	   		} 
+	   		} 
+
+	   		
+	   	}
+	   }
+	   &>span{
+	   	float: left;
+	   	margin-left: 420px;
+	   	margin-top: 30px;
+	   	&>a{
+	   		color: #ff7c31;
+	   		font-size: 14px;
+
+	   	}
+	   }
+	   @media screen and (max-width: 1300px){
+	   	&>span{
+              	margin-left: 5%;
+	   	}
+	   }
+}
+
+
+.register{
+	width:100%;
+	min-width: 1200px;
+	height:600px;
+	background:url(../../image/dlzcbanner.jpg) no-repeat ;
+	background-size:cover;
+	padding-top: 50px;
+	.register_content{
+		width: 400px;
+		height: 450px;
+		background: #fff;		
+		margin-left:59%;
+		border-radius: 3px;
+		border-shadow:0px 2px 10px black;
+		padding: 10px 30px;
+		&>.register_method{
+			white-space: nowrap;
+
+			&>a{
+				width: 170px;
+				line-height: 50px;
+				text-align: center;
+				display: inline-block;
+				font-size: 18px;
+				color: #333333;
+				border-bottom: 2px solid #d9d9d9;
+				&>i{
+				font-size: 28px;
+				margin-right: 10px;
+			}
+			
+				
+			}
+			.method_active{
+				color: #00baff;
+				border-color: #00baff;
+			}
+		}
+		.register_data{
+			&>form{
+				input{
+					width: 338px;
+					height: 44px;
+					margin-top: 18px;
+					text-indent: 15px;
+					border:1px solid #d9d9d9;
+				}
+				.S_code{
+					display: block;
+
+				&>input{
+					width: 200px;
+					height: 44px;
+					text-indent: 15px;
+					border-color: #d9d9d9;
+				}
+				&>a{
+					width: 116px;
+					height: 44px;
+					display: inline-block;
+					text-align: center;
+					line-height: 44px;
+					border:1px solid #d9d9d9;
+					border-radius: 3px;
+					margin-left: 20px;
+					background-color: #888888;
+					color: white;
+					border:none;
+					font-size: 14px;
+				}
+			}
+			}
+			
+			
+			&>p{
+				margin-top: 18px;
+				span{
+					width: 90px;
+					height: 34px;
+					border:1px solid #00baff;
+					display: inline-block;
+					text-align: center;
+					line-height: 34px;
+					border-radius: 3px;
+					cursor: pointer;
+					font-size: 14px;
+				}
+				.agent{
+					width: 120px;
+					margin-left:20px; 
+				}
+				.company{
+					margin-left:20px; 
+				}
+			}
+			.people_active{
+                    color: white;
+                    background-color: #00baff;
+			}
+			.remeber{
+				font-size: 14px;
+				color: #333333;
+				margin-top: 25px;
+              
+				.rem_select{
+					width: 17px;
+					height: 17px;
+					display: inline-block;
+					position: relative;
+					border-radius: 3px;
+					border:1px solid #d9d9d9;
+					float: left;
+				    margin-top: 2px;
+					input[type="checkbox"]{
+					width: 17px;
+					height: 17px;			
+					position: absolute;
+					border-radius: 3px;
+					cursor: pointer;
+					opacity: 0;
+					z-index: 999;
+				}
+				.icon-xuanzhong {
+					position: absolute;
+					top: -7px;
+					left: -1px;
+					font-size: 18px;
+					display: none;
+					color: #00baff;
+				}
+				}
+				
+				&>a{
+                    
+                    color: #007eb2;
+				}
+			}
+			.register_btn{
+				width: 340px;
+				height: 44px;
+				color: white;
+				text-align: center;
+				line-height: 44px;
+				font-weight: bolder;
+				border: none;
+				margin-top: 24px;
+				font-size: 18px;
+				border-radius: 3px;
+				background: url(../../image/btn_lg.png) repeat-x;
+				cursor: pointer;
+				margin-bottom: 24px;
+			}
+		}
+		#register_phone{
+			height: 550px;
+			display: none;
+		}
+		#register_email{
+			display: block;
+		}
+	
+	}
+}
+.footer{
+	width: 100%;
+	margin-top: 30px;
+	ul{
+		width: 504px;
+		display: block;
+		margin: 0 auto;
+		overflow: hidden;
+		li{
+			float: left;
+			
+			
+			a{
+				color: #333333;
+				font-size: 14px;
+				padding: 0 20px;
+				border-left: 1px solid #ccc;
+			}
+		}
+		li:first-child{
+			a{
+				border-left: none;
+			}
+			
+		}
+	}
+	p{
+		font-size: 14px;
+		color: #777777;
+		text-align: center;
+		margin-top: 12px;
+	}
+}

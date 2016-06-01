@@ -1,0 +1,352 @@
+@import "../../common/reset";
+@import "../../lib/jquery.range.css";
+@import "../modules/filter";
+@import "../modules/search";
+@import "../modules/select";
+@import "../modules/webSiteHeader";
+@import "../modules/webSiteFooter";
+@import "../modules/pagination_group";
+
+body{
+	background-color:#f9f9f9;
+}
+.content{
+	width:1200px;
+	margin:0 auto;
+	color:#333333;
+	.m_pos{
+		width: 1158px;
+		/* height: 58px; */
+		border: 1px solid #ccc;
+		margin:0 auto;
+		background-color:#fcfcfc;
+		font-size:18px;
+		line-height: 58px;
+		text-indent: 30px;
+		color:#333333;
+		.data_amount{
+			color:#ff6b12;
+			padding: 0px 4px;
+		}
+        select{
+        	width: 100px;
+        	height: 30px;
+        	font-size:16px;
+        	text-align: center;
+        	text-indent: 2mm;
+        	margin-left: 24px;
+        	color:#777777;
+        }
+        .paging{
+        	width: 120px;
+        	height: 30px;
+        	display: inline-block;
+        	float: right;
+        	margin-top: 14px;
+        	margin-right: 20px;
+        	&:after{display:block;clear:both;content:"";visibility:hidden;height:0} 
+        	a{
+        		width: 20px;
+        		height: 20px;
+        		display: inline-block;
+        		margin-top: 5px;
+        		cursor: pointer;
+        	}
+        	.left{
+        		background:url(../../../image/left.png) no-repeat center;
+        		float: left;
+        	}
+        	.right{
+        		background:url(../../../image/right.png) no-repeat center;
+        		float: right;
+        		&:after{display:block;clear:both;content:"";visibility:hidden;height:0} 
+
+        	}
+        	span{width:15px;float:left;line-height:30px;text-align:center;display:inline-block !important;text-indent:0px;}
+        	.private_page{color:#ff6b11;margin-left:20px;}
+        }
+
+	}
+	.company_list{
+		ul{
+			background-color:white;
+			li{
+				width: 1158px;
+				height: auto;
+				overflow: hidden;
+				margin:0 auto;
+				padding-bottom:15px;
+				border:1px solid #e6e6e6;
+				&:hover{background-color:#fdfdfd;}
+				.company_link{
+					width: 124px;
+					height: 34px;
+					line-height: 31px;
+					display:inline-block ;
+					float: right;
+					color: #333333;
+					font-size: 16px;
+					border:1px solid #00baff;
+					text-align: center;
+					margin-top: 65px;
+					margin-right: 20px;
+					border-radius:3px;
+					
+					&:hover{
+						background-color:#00bbfe;
+						color: white;
+						i{
+							color: white;
+						}
+					}
+					i{
+						color: #00baff;
+						margin-left: 10px;
+					}
+
+				}
+               
+				.z_job{
+					.job_pic{
+						width: 100px;
+						height: 100px;
+						display: inline-block;
+						line-height: 116px;
+						border:1px solid #ccc;
+						margin-top: 28px;
+						margin-left: 28px;
+						border-radius:5px;
+						text-align: center;
+						float: left;
+						background-color: #fff;
+						
+					}
+					.job_req{
+						display: inline-block;
+						height: 100px;										
+						float: left;
+						margin-top: 40px;
+						margin-left: 30px;
+						.job_title{
+							font-size: 16px;
+							color:#333333;
+							span{
+								font-size: 14px;
+								color: #777777;
+							}
+						}
+						.company_details{
+							margin-top: 20px;
+							&>span{
+								font-size: 14px;
+                                color: #777777;
+                                margin-right: 30px;
+                                i{
+                                	margin-right: 10px;
+                                }
+                                .number_hire{
+                                	color: #ff6b12;
+                                }
+							}
+						}
+					}	
+				}
+			}
+		}
+	}
+	.position_list{	
+
+		ul{
+			background-color:white;
+			padding-bottom:30px;
+			.personal{
+				padding-bottom:30px;
+				border-color: #68d6ff;
+				 &:hover{background-color:#f8feff;}
+			}
+			.enterprise{
+				padding-bottom:30px;
+				background: url(../../../image/y_corner.png) no-repeat top right;
+				 &:hover{background-color:#fdfdfd;}
+			}
+			.headhunters{
+				background: url(../../../image/b_corner.png) no-repeat top right;
+				padding-bottom:30px;
+				 &:hover{background-color:#fdfdfd;}
+			}
+
+			li{
+				width: 1158px;
+				height: 158px;
+				height: auto;
+				overflow: hidden;
+				margin:0 auto;
+				margin-top: 20px;
+				border:1px solid #ccc;
+                position:relative;
+              
+				.z_job{
+					.job_pic{
+						width: 100px;
+						height: 100px;
+						display: inline-block;
+						line-height: 116px;
+						border:1px solid #ccc;
+						background-color: #fff;
+						margin-top: 28px;
+						margin-left: 28px;
+						border-radius:5px;
+						text-align: center;
+						float: left;
+					}
+					.job_req{
+						display: inline-block;
+						height: 100px;										
+						float: left;
+						margin-top: 28px;
+						margin-left: 30px;
+						.job_title{
+							font-size: 22px;
+							color:#007eb2;
+						}
+						span{
+							font-size: 18px;
+							line-height: 30px;
+							margin-right: 10px;
+						}
+						.job_salary{
+							color:#ff6b12;
+							margin-right: 15px;
+						}
+						.job_time{
+							font-size: 14px;
+							color: #777777;
+							span{
+								font-size: 16px;
+							}
+						}
+					}
+				}
+				.divid_line{
+					width: 1px;
+					height: 100px;
+					background-color: #ccc;
+					float: left;
+					margin-left: 55px;
+					margin-top: 28px;
+				}
+				.z_company{
+					display: inline-block;
+					float: left;
+					margin-top: 28px;
+					margin-left: 40px;
+					.company_tile{
+						font-size: 18px;
+						color: black;
+					}
+					.company_type{
+						color:#777777;
+						font-size: 18px;
+						line-height: 36px;
+						span{
+							width:5px;
+							height: 5px;
+							border-radius:50%;
+							display: inline-block;
+							line-height: 36px;
+							background-color:#d2d2d2;
+							margin-left:12px;
+							margin-right:12px;
+							margin-bottom: 2px;
+						}
+					}
+					.company_benefs{
+						margin-top: 10px;
+						span{
+							width: 72px;
+							height: 26px;
+							display: inline-block;
+							text-align: center;
+							line-height: 24px;
+							border:1px solid #68d6ff;
+							color: #007eb2;
+							margin-right: 12px;
+							background-color:#f5fdff;
+							border-radius:3px;
+						}
+					}
+				}
+				.reward_company{
+					width: 210px;
+					height: 158px;
+					display: block;
+					position: absolute;
+					background:url(../../../image/bg.png) no-repeat left;
+					background-color:#0096cd;					
+					text-align: center;
+					color: white;
+					right: 0;
+					cursor: pointer;
+					.reward_money{
+						margin-top: 45px;
+						font-size: 36px;
+					}
+					.reward_text{
+						font-size: 22px;
+					}
+					&:after{display:block;clear:both;content:"";visibility:hidden;height:0} 
+				}
+				.identify{
+					display: inline-block;
+					float: right;
+					margin-right: 5px;
+					font-size: 14px;
+					color: white;
+					margin-top: 4px;
+
+				}
+			}
+		}
+	}
+}
+.all_results {
+	background-color: #fff;
+	padding: 20px;
+	margin-bottom: 16px;
+	.pagination_group {
+		margin: 20px 0;
+		padding: 0;
+		border-top: none;
+	}
+}
+.select-filter{border:1px solid #d9d9d9;margin-top:20px;}
+.search_wrap {
+    background: #fff url(../../../image/common/findjob.png) no-repeat;
+    background-position: 661px bottom;
+
+}
+
+.search_wrap .search_input {
+	margin-bottom: 0;
+}
+.search_data{
+	font-size:16px;
+	margin: 20px 0 0 23px;
+	padding-bottom: 10px;
+	a{
+		
+		padding: 0 20px;
+		text-align: center;
+		line-height: 30px;
+		border-radius:3px;
+		display: inline-block;
+		&:hover{
+			background-color:#00bbfe;
+			color: white;
+		}
+	}
+	.data_active{
+		background-color:#00bbfe;
+			color: white;
+	}
+}

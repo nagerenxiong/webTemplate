@@ -1,0 +1,238 @@
+@import "../common/reset";
+@import "./modules/webSiteHeader";
+@import "./modules/webSiteFooter";
+
+body {
+	background-color: #f9f9f9;
+}
+.hhnt_banner {
+	position: relative;
+	img.m{
+		width:100%;
+	}
+	img.m1{
+	  position:absolute;
+	  width:876px;
+	  top:50%;
+	  left:50%;
+	  margin-left: -438px;
+	  margin-top: -95px;
+	  height:189px;
+	  
+	}
+}
+.hhnt_feature_box {
+	margin-top: 15px;
+	width: 1200px;
+	padding: 30px 40px 35px 40px;
+	background-color: #fff;
+
+	.item, .item1, .item2 {
+		float: left;
+	}
+	.item1 {
+		margin-left: 80px;
+	}
+	.item2 {
+		margin-left: 90px;
+	}
+	i {
+		font-size: 60px;
+		color: #06bcff;
+		float: left;
+	}
+	p {
+		padding-left: 90px;
+	}
+	p.t {
+		font-size: 22px;
+		color: #333;
+		margin-top: 12px;
+	}
+	p.b {
+		font-size: 16px;
+		color: #777;
+		margin-top: 10px;
+	}
+	@include box_shadow_hhnt;
+}
+.hhnt_list {
+	width: 1230px;
+	margin-top: 15px;
+
+	a.item {
+		position: relative;
+		margin: 0 15px;
+		overflow: hidden;
+		float: left;
+		&:hover{
+			.name_box{
+				display:none;
+			}
+		}
+		img {
+			width: 277px;
+			height: 400px;
+			@include border_shadow_hhnt;
+			border-width: 4px;
+			margin-bottom: 15px;
+		}
+		.name_box {
+			height: 100px;
+			background: rgba(0, 0, 0, 0.86);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#c8000000, endColorstr=#c8000000);
+			position: absolute;
+			bottom: 23px;
+			width: 269px;
+			left: 4px;
+			padding-left: 15px;
+			font-size: 14px;
+			color: #fff;
+			z-index: 1;
+
+			.t {
+				margin-top: 15px;
+
+				.name {
+					font-size: 18px;
+					margin-right: 10px;
+				}
+			}
+			.b {
+				margin-top: 12px;
+
+				em {
+					font-size: 22px;
+					color: #ffe777;
+					vertical-align: -3px;
+					margin: 0 5px;
+				}
+			}
+		}
+		.introduce_box {
+			width: 269px;
+			position: absolute;
+			display:none;
+			bottom: 23px;
+			left: 4px;
+			z-index: 2;
+			overflow: hidden;
+			height: 0px;			
+			background: rgba(0, 0, 0, 0.86);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#c8000000, endColorstr=#c8000000);
+			color: #fff;
+			padding: 60px 20px 0 20px;
+			line-height: 30px;
+
+			dt {
+				font-size: 22px;
+			}
+			dd {
+				margin-top: 10px;
+				font-size: 16px;
+			}
+		}
+	}
+	a.item1 {
+		margin: 0 15px;
+		width: 583px;
+		margin-bottom: 15px;
+		height: 392px;
+		float: left;
+	}
+	// div {
+		// padding: 0;
+	// }
+}
+.hhnt_boss_box {
+	background: url(../../image/HDpicture/hhnt_boss_bg.jpg) no-repeat center center;
+	height: 480px;
+
+	.slideBox {
+		position: relative;
+		
+		.bd {
+			margin-left: 85px;
+			position:relative;
+			>h3 {
+				strong {
+					font-size: 60px;
+					vertical-align: -5px;
+					font-weight: bold;
+					font-family:Arial;
+				}
+				color: #fff;
+				font-size: 52px;
+				text-align: center;
+				background: url(../../image/icon/line.png) no-repeat 100px bottom;
+				position:absolute;
+				width:640px;
+				left:50%;
+				margin-left: -320px;
+				top:80px;
+			}
+			li {
+				padding-top: 84px;
+
+				div {
+					margin-top: 139px;
+
+					img {
+						float: left;
+						@include border_shadow_hhnt1(3px, #1aa0d2, 10px, #07688c);
+						border-radius: 50%;
+						width: 100px;
+						height: 100px;
+						margin-top: 30px;
+					}
+					dl {
+						margin-left: 141px;
+
+						dt {
+							font-size: 22px;
+							color: #fff;
+							border-radius: 3px;
+							line-height: 40px;
+							width: auto;
+							display: inline-block;
+							height: 40px;
+							padding: 0 26px;
+							margin-left: 7px;
+						}
+						>dt.c1 {
+							background-color: #00c191
+						}
+						>dt.c2 {
+							background-color: #ff855a
+						}
+						>dt.c3 {
+							background-color: #ffb910
+						}
+						dd {
+							margin-top: 12px;
+							background: url(../../image/hhnt_boss_bottom_bg.png) no-repeat left top;
+							height: 100px;
+							width: 887px;
+							line-height: 33px;
+							color: #777;
+							font-size: 18px;
+							padding: 20px 77px;
+						}
+					}
+				}
+			}
+		}
+		a {
+			color: #5dbee0;
+			font-size: 70px;
+			position: absolute;
+			top: 203px;
+		}
+		.prev {
+			left: 0;
+		}
+		.next {
+			right: 0;
+		}
+	}
+}

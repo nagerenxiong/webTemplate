@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* 搜索模块 start */
+.search_wrap {
+	margin-top: 16px;
+	margin-bottom: 16px;
+	background: #fff url(../../image/common/searchBarBg.png) no-repeat;
+	background-position: 661px 19px;
+	border: 1px solid #f6f6f6;
+	border-bottom: none;
+}
+.search_input {
+	/*搜索输入框*/
+	position: relative;
+	display: inline-block;
+	width: 620px; /*可直接修改数值来调节搜索框长度*/
+	border: 2px solid #00d3ff;
+	border-radius: 3px;
+	// font-size: 0;
+
+	input[type="text"] {
+		border: none;
+		width: 100%;
+		height: 46px;
+		// line-height: 46px;
+		font-size: 16px;
+		padding-left: 20px;
+		padding-right: 118px;
+		vertical-align: top;
+	}
+	> a {
+		position: absolute;
+		top: 0;
+		right: 0;
+		border: none;
+		width: 110px;
+		height: 46px;
+		background: #00d3ff;
+		color: #fff;
+		text-align: center;
+		cursor: pointer;
+
+		> i {
+			font-size: 30px;
+		}
+	}
+	&:hover {
+		border-color: #00baff;
+		> a {
+			background-color: #00baff;
+		}
+		.search_show {
+			border-color: #00baff;
+		}
+	}
+	.search_show {
+		position: absolute;
+		z-index: 1;
+		left: -2px;
+		right: -2px;
+		color: $mainColor01;
+		border: 2px solid #00d3dd;
+		background-color: #fff;
+		font-size: 16px;
+		display: none;
+
+		> .table {
+			width: 100%;
+
+			> div {
+				border-right: 1px dashed $bColor01;
+				padding: 5px;
+
+				> ul > li {
+					text-align: right;
+					line-height: 30px;
+					padding: 0 10px 0 15px;
+					cursor: pointer;
+
+					&.active {
+						background-color: #f9f9f9;
+					}
+					> span > span {
+						color: $strongColor;
+					}
+					> span:first-child {
+						float: left;
+					}
+				}
+			}
+			> span {
+				width: 64px;
+				color: $weakenColor;
+				background-color: #fcfcfc;
+			}
+		}
+		> .table:first-child {
+			border-bottom: 1px dashed $bColor01;
+		}
+	}
+}
+.search_wrap .search_input {
+    margin: 30px 0 30px 20px;
+}
+/* 搜索模块 end */

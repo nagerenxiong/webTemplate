@@ -1,0 +1,74 @@
+@charset "utf-8";
+.top1 {
+  background-color: #008cbf;
+  height: 70px;
+
+  .logo {
+    float: left;
+    margin-top: 17px;
+    width: 116px;
+    height: 36px;
+  }
+  .login_box, .reg_box {
+    float: right;
+    display: none;
+    margin-top: 20px;
+
+    a {
+      color: #fff;
+
+      i, img {
+        margin-right: 8px;
+      }
+      i {
+        font-size: 18px;
+        vertical-align: 0px;
+      }
+      margin-left: 20px;
+    }
+    * {
+      vertical-align: middle;
+    }
+    &.active {
+      display: none;
+    }
+  }
+}
+// 等级小图标
+span.level {
+  background: url(../../image/level.png) no-repeat;
+  width: 36px;
+  height: 19px;
+  font-size: 12px;
+  line-height: 19px;
+  text-align: center;
+  color: #fff;
+  vertical-align: middle;
+  display: inline-block;
+}
+//翻页
+.paging_box {
+  text-align: center;
+
+  a, span {
+    height: 36px;
+    border: 1px solid #e6e6e6;
+    display: inline-block;
+    line-height: 36px;
+    color: #777;
+    margin: 0 5px;
+    font-size: 16px;
+  }
+  a {
+    padding: 0 15px;
+  }
+  span {
+    padding: 0 8px;
+  }
+  a:hover, a.active, span:hover, span.active {
+    background-color: #00baff;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+

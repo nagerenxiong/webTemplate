@@ -1,0 +1,47 @@
+{
+  "name": "hcdyhr",
+  "version": "1.0.0",
+  "description": "",
+  "author": [
+    "Mr.xiong"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --progress --colors --watch"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.12.3",
+    "css-loader": "^0.23.1",
+    "del": "^2.2.0",
+    "es5-shim": "^4.5.8",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "font-awesome": "^4.6.1",
+    "gulp": "^3.9.1",
+    "gulp-all-base64": "^0.1.4",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-base64": "^0.1.3",
+    "gulp-changed": "^1.3.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-img64": "0.0.6",
+    "gulp-inline-base64": "^0.1.4",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.16.0",
+    "http-server": "^0.9.0",
+    "imports-loader": "^0.6.5",
+    "jquery": "^2.2.3",
+    "node-sass": "^3.4.2",
+    "normalize": "^0.3.1",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1"
+  }
+}

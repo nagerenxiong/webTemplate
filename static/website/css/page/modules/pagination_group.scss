@@ -1,0 +1,75 @@
+.pagination_group {
+	text-align: center;
+	font-size: 0;
+	margin: 0 20px;
+	padding: 40px 0;
+	border-top: 1px solid $bColor01;
+	ul {
+		display: inline-block;
+		vertical-align: top;
+		li {
+			float: left;
+			margin: 0 5px;
+			width: 34px;
+			font-size: 14px;
+			height: 34px;
+			line-height: 34px;
+			
+			a {
+				height: 34px;
+				display: block;
+				border: 1px solid $bColor01;
+				color: $mainColor02;
+				@include transition(background-color .15s ease-out,color .15s ease-out);
+			}
+			&.active > a,
+			&:hover > a {
+				border-color: $bColor02;
+				background-color: $bColor02;
+				color: #fff;
+			}
+		}
+		.prev_page,
+		.next_page {
+			width: 82px;
+		}
+		.ellipsis {
+			letter-spacing: 5px;
+			padding-left: 5px;
+		}
+	}
+	div {
+		display: inline-block;
+		font-size: 14px;
+		line-height: 34px;
+		vertical-align: top;
+		color: $mainColor02;
+		margin-left: 20px;
+		input {
+			height: 34px;
+			// line-height: 32px;
+			font-size: 14px;
+		}
+		input[type="text"] {
+			width: 34px;
+			border: 1px solid $bColor01;
+			vertical-align: top;
+			text-align: center;
+			color: $mainColor02;
+		}
+		input[type="button"] {
+			width: 68px;
+			border: 1px solid $bColor02;
+			background-color: #fff;
+			color: $mainColor02;
+			border-radius: 3px;
+			margin-left: 10px;
+			cursor: pointer;
+			@include transition(background-color .15s ease-out,color .15s ease-out);
+			&:hover {
+				background-color: #00baff;
+				color: #fff;
+			}
+		}
+	}
+}

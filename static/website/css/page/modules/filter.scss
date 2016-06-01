@@ -1,0 +1,118 @@
+.filter_module {
+	width: 100%;
+  	border: 1px solid #d9d9d9;
+  	background-color: #fff;
+  	padding: 0 20px;
+  	a {
+  		position: relative;
+  		padding: 4px 12px;		
+		background-color: #fff;
+		color: #777;
+		border-radius: 3px;
+		margin-right: 2px;
+  	}
+  	a.active,
+  	a:hover {
+		background-color: #00baff;
+		color: #fff;
+	}
+	a.active > i {
+		position: absolute;
+		z-index: 1;
+		border-width: 8px 7px;
+		border-style: solid;
+		border-color: transparent transparent #00baff transparent;
+		left: 50%;
+		margin-left: -6px;
+		top: 22px;
+		&:before {
+			content: "";
+			position: absolute;
+			border-width: 8px 7px;
+			border-style: solid;
+			border-color: transparent transparent #fff transparent;
+			top: -7px;
+			left: -7px;
+		}
+	}
+	> div {
+  		border-top: 1px dashed #e6e6e6;
+  		&:first-child {
+  			border-top: none;
+  		}
+
+  		.fm_name {
+  			  font-size: 16px;
+			  line-height: 50px;
+			  color: #333;
+  		}
+  	}
+  	.item_detail {
+		position: relative;
+		width: 100%;
+		border: 1px solid #00baff;
+		padding: 10px 0 10px 10px;
+		margin-top: 5px;
+		margin-bottom: 10px;
+		margin: 10px 0;
+		display: none;
+	}
+}
+.fm_industry,
+.fm_city,
+.common_item {
+	display: inline-block;
+	width: 960px;
+	margin-top: 12px;
+	font-size: 14px;
+	height: 28px;
+	line-height: 28px;
+	vertical-align: top;
+	overflow: hidden;
+	> div {
+		margin-bottom: 3px;
+	}
+}
+.for_more {
+	position: relative;
+	float: right;
+	line-height: 50px;
+	font-size: 14px;
+	color: #007eb2;
+	padding-right: 20px;
+	cursor: pointer;
+	> i {
+		position: absolute;
+		top: 22px;
+		right: 4px;
+		border-width: 6px 6px 0;
+		border-style: solid;
+		border-color: #ababab transparent transparent;
+		@include transition(transform 0.2s ease-out);
+	}
+}
+.fm_type_01,
+.fm_type_02,
+.fm_type_03,
+.fm_type_04 {
+	position: relative;
+	> .show_temp {
+		position: absolute;
+		top: 10px;
+		right: 57px;
+		font-size: 14px;
+	}
+}
+.fm_type_01 .show_temp {right: 225px;}
+.fm_type_02 .show_temp,
+.fm_type_03 .show_temp {
+	right: 567px;
+}
+
+.city_item {
+	> span {
+		display: inline-block;
+		width: 54px;
+		color: #777;
+	}
+}
